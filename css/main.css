@@ -11,6 +11,14 @@ a{
 *{
     font-family: 'Roboto';
 }
+body{
+    margin: 0px;
+}
+/*header style*/
+header{
+    position:fixed;
+    width: 100%;
+}
 .header__content{
     display: flex;
     flex-direction: row;
@@ -20,6 +28,9 @@ a{
 .container{
     width: 1100px;
     margin: 0 auto;
+}
+.header__burger{
+    display: none;
 }
 .header__logo{
     color: #62D0DF;
@@ -38,7 +49,40 @@ a{
     font-size: 14px;
     padding: 10px;
 }
-.active{
-    border-bottom: 1px solid #22356F;
-    
+.homePage{
+    background-image: url(../img/HomePageBG.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
+@media screen and (max-width: 1100px){
+    .container{
+        width: 800px;
+    }
+}
+@media screen and (max-width: 800px){
+ .container{
+     width: 600px;
+ }
+}
+@media screen and (max-width: 800px){
+    .container{
+        width: 100%;
+    }
+    .header__logo{
+        display: none;
+    }
+    
+   }
+   @media screen and (max-width: 420px){
+    .container{
+        width: 100%;
+    }
+    .header__content{
+        flex-direction: column;
+    }
+    .header__menu{
+        width: 100%;
+        justify-content: space-between;
+    }
+   }
