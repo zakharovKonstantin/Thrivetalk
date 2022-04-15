@@ -76,6 +76,16 @@ header{
 .homePage__buttonBox{
     padding-top: 60px;
 }
+.homePage__buttonBox a{
+    font-size: 16px;
+    color: #FAB63E;  
+    text-transform: uppercase;
+    padding: 10px 30px;
+}
+.homePage__button:hover{
+    background-color: #FAB63E;
+    color: #ffffff;
+}
 @media screen and (max-width: 1100px){
     .container{
         width: 800px;
