@@ -10,6 +10,7 @@ a{
 }
 *{
     font-family: 'Roboto';
+    margin: 0;
 }
 body{
     margin: 0px;
@@ -18,7 +19,8 @@ body{
 header{
     padding-top: 30px;
     position:fixed;
-    width: 100%;
+    width: 100vw;
+    box-sizing: border-box;
 }
 .header__content{
     display: flex;
@@ -55,19 +57,19 @@ header{
     padding: 10px;
 }
 .homePage{
+    padding-top: 200px;
     background-image: url(../img/HomePageBG.jpg);
-    background-size: 100%;
-    height: 100vh;
     background-repeat: no-repeat;
-    padding-top: 240px;
 }
 .homePage h3{
+    padding-top: 30px;
     width: 50%;
     color: #22356F;
     font-size: 48px;
     text-transform: uppercase;
 }
 .homePage p{
+    padding-top: 40px;
     width: 46%;
     color: #22356F;
     font-size: 24px;
@@ -75,6 +77,7 @@ header{
 }
 .homePage__buttonBox{
     padding-top: 60px;
+    padding-bottom: 200px;
 }
 .homePage__buttonBox a{
     font-size: 16px;
@@ -86,7 +89,98 @@ header{
     background-color: #FAB63E;
     color: #ffffff;
 }
-@media screen and (max-width: 1100px){
+.thrive{
+    background-image: url(../img/ThriveBg.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 100%;
+}
+.thrive__content h5{
+    font-size: 36px;
+    color: #ffffff;
+    padding-top: 150px;
+    padding-bottom: 75px;
+}
+.thrive__content p{
+    width: 53%;
+    font-size: 24px;
+    color: #fff;
+    line-height: 36px;
+}
+
+.about__content{
+   display: flex;
+   flex-direction: row;
+}
+.about__content span{
+    color: #22356F;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 102px;
+    padding-top: 156px;
+    padding-left: 156px;
+}
+.about__content p{
+    font-size: 24px;
+    line-height: 33px;
+    padding-top: 156px;
+    padding-left: 256px;
+    max-width: 31%;
+}
+.about__bottomContent{
+    color: #22356F80;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 18px;
+    width: 100%;
+    text-align: center;
+    padding-top: 76px;
+}
+
+.kindSport__smallBox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: blue;
+}
+.kindSport__bigBox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: blue;
+}
+.kindSport__smallBox-item{
+    position: relative;
+    flex-grow: 1;
+    padding-top: 72px;
+    padding-bottom: 210px;
+}
+.kindSport__bigBox-item{
+    width: 33%;
+    position: relative;
+    flex-grow: 1;
+    padding-top: 105px;
+    padding-bottom: 210px;
+    align-items: center;
+}
+
+.kindSport__dot{
+    color: #E9B730;
+    font-size: 50px;
+}
+.kindSport__boxContent{
+    width: 45%;
+    display: inline-block;
+    border-top: 1px solid #ffffff;
+}
+.kindSport__sportName{
+    font-size: 32px;
+    color: #ffffff;
+    margin-top: 95px;
+}
+@media screen and (max-width: 1520px){
     .container{
         width: 800px;
     }
@@ -96,15 +190,6 @@ header{
      width: 600px;
  }
 }
-@media screen and (max-width: 800px){
-    .container{
-        width: 100%;
-    }
-    .header__logo{
-        display: none;
-    }
-    
-   }
    @media screen and (max-width: 480px){
     .container{
         width: 100%;
